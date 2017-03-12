@@ -1,0 +1,10 @@
+[Unit]
+Description=Magic 8-ball slack service
+
+[Service]
+Type=simple
+ExecStart=/home/cab/bin/8ball <SLACK API TOKEN HERE>
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
